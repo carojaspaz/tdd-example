@@ -8,7 +8,7 @@ const app = express()
 app.use(bodyParser.urlencoded({ extends: false}))
 app.use(bodyParser.json())
 
-app.use(accountRoutes)
+app.use('/v1', accountRoutes)
 
 module.exports = app
 
